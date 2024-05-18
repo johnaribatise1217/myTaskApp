@@ -1,6 +1,6 @@
 "use client"
 
-import { useGlobalState } from '@/app/context/globalProvider';
+import { UseGlobalState } from '@/app/context/globalProvider';
 import { useClerk } from '@clerk/nextjs';
 import { useRouter } from 'next/router';
 import React from 'react'
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const Button = ({icon, name, background, padding, borderRad, fw, fs, click, type, border, color} : Props) => {
-  const {theme} = useGlobalState()
+  const {theme} = UseGlobalState()
 
   return (
     <ButtonStyled

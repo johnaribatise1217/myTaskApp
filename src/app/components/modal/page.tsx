@@ -1,5 +1,5 @@
 'use client'
-import { useGlobalState } from '@/app/context/globalProvider'
+import { UseGlobalState } from '@/app/context/globalProvider'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Modal = ({content} : Props) => {
-  const {closeModal, theme} = useGlobalState()
+  const {closeModal, theme} = UseGlobalState()
 
   return (
     <ModalStyled theme={theme}>

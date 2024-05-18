@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
 import Tasks from "../../components/Tasks/page"
-import { useGlobalState } from '@/app/context/globalProvider'
+import { UseGlobalState } from '@/app/context/globalProvider'
 
 const ImportantPage = () => {
-  const {importantTasks} = useGlobalState()
+  const {importantTasks} = UseGlobalState()
 
   return (
     <Tasks title='Important Tasks' tasks={importantTasks}/>

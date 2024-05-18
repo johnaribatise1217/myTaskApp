@@ -1,5 +1,5 @@
 'use client'
-import { useGlobalState } from '@/app/context/globalProvider'
+import { UseGlobalState } from '@/app/context/globalProvider'
 import axios from 'axios'
 import React, {useState} from 'react'
 import toast from 'react-hot-toast'
@@ -14,7 +14,7 @@ const CreateContent = () => {
   const [important, setImportant] = useState(false)
   const [completed, setCompleted] = useState(false)
 
-  const {theme, getAllTasks, closeModal} = useGlobalState()
+  const {theme, getAllTasks, closeModal} = UseGlobalState()
 
   const handleChange = (name : string) => (e : any) => {
     //use switch loop to set the states

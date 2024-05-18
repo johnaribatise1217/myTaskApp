@@ -2,7 +2,7 @@
 import React from 'react'
 import { edit, trash } from '@/app/utils/Icons'
 import styled from 'styled-components'
-import { useGlobalState } from '@/app/context/globalProvider'
+import { UseGlobalState } from '@/app/context/globalProvider'
 import FormateDate from '@/app/utils/FormatDate'
 
 interface Props{
@@ -14,7 +14,7 @@ interface Props{
 }
 
 const TaskItem = ({title, description, date, isCompleted, id} : Props) => {
-  const {theme, deleteTask, updateTask} = useGlobalState()
+  const {theme, deleteTask, updateTask} = UseGlobalState()
 
   return (
     <TaskItemStyled theme={theme}>

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import styled from 'styled-components'
-import {useGlobalState} from '@/app/context/globalProvider'
+import {UseGlobalState} from '@/app/context/globalProvider'
 import Image from 'next/image'
 import profile from '../../images/profile.jpeg'
 import menu from '@/app/utils/menu'
@@ -12,7 +12,7 @@ import Button from '../Button/Button'
 import { UserButton, useClerk, useUser } from '@clerk/nextjs'
 
 const SideBar = () => {
-  const {theme, collapsed, collapseSidebar} = useGlobalState()
+  const {theme, collapsed, collapseSidebar} = UseGlobalState()
   const router = useRouter()
   const pathname = usePathname()
   const {signOut} = useClerk()

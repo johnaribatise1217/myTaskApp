@@ -1,5 +1,5 @@
 'use client'
-import { useGlobalState } from '@/app/context/globalProvider'
+import { UseGlobalState } from '@/app/context/globalProvider'
 import React from 'react'
 import styled from 'styled-components'
 import CreateContent from '../modal/CreateContent'
@@ -13,7 +13,7 @@ interface Props{
 }
 
 const page = ({title, tasks} : Props) => {
-  const {theme, isLoading, openModal, modal} = useGlobalState()
+  const {theme, isLoading, openModal, modal} = UseGlobalState()
 
   return (
     <TaskStyled theme={theme}> 
