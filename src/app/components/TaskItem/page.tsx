@@ -5,15 +5,15 @@ import styled from 'styled-components'
 import { UseGlobalState } from '@/app/context/globalProvider'
 import FormateDate from '@/app/utils/FormatDate'
 
-interface Props{
-  title : string,
-  description : string,
-  date : string,
-  isCompleted : boolean,
+interface PropTypes{
+  title : string
+  description : string
+  date : string
+  isCompleted : boolean
   id : string
 }
 
-const TaskItem = ({title, description, date, isCompleted, id} : Props) => {
+const TaskItem = ({title, description, date, isCompleted, id} : PropTypes) => {
   const {theme, deleteTask, updateTask} = UseGlobalState()
 
   return (
