@@ -10,7 +10,7 @@ interface Props{
   description : string,
   date : string,
   isCompleted : boolean,
-  id : number
+  id : string
 }
 
 const TaskItem = ({title, description, date, isCompleted, id} : Props) => {
