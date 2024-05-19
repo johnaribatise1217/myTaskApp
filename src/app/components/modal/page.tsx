@@ -3,11 +3,11 @@ import { UseGlobalState } from '@/app/context/globalProvider'
 import React from 'react'
 import styled from 'styled-components'
 
-interface Props {
+interface PropsType {
   content : React.ReactNode
 }
 
-const Modal = ({content} : Props) => {
+const Modal = ({content} : PropsType) => {
   const {closeModal, theme} = UseGlobalState()
 
   return (

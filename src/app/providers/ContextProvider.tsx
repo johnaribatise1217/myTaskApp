@@ -3,11 +3,11 @@ import React, {useEffect, useState } from 'react'
 import { GlobalProvider } from '../context/globalProvider'
 import { Toaster } from 'react-hot-toast'
 
-interface Props { 
+interface PropsType { 
   children : React.ReactNode
 }
 
-const ContextProvider = ({children} : Props) => {
+const ContextProvider = ({children} : PropsType) => {
   const [isReady , setIsReady] = useState(false)
 
   useEffect(() => {

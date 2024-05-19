@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import React from 'react'
 import styled from 'styled-components';
 
-interface Props {
+interface PropsType {
   icon? : React.ReactNode,
   name? : string,
   background? : string,
@@ -20,7 +20,7 @@ interface Props {
   color : string
 }
 
-const Button = ({icon, name, background, padding, borderRad, fw, fs, click, type, border, color} : Props) => {
+const Button = ({icon, name, background, padding, borderRad, fw, fs, click, type, border, color} : PropsType) => {
   const {theme} = UseGlobalState()
 
   return (

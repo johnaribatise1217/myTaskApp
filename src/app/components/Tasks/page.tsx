@@ -7,12 +7,12 @@ import TaskItem from '../TaskItem/page'
 import { plus } from '@/app/utils/Icons'
 import Modal from '../modal/page'
 
-interface Props{
+interface PropsType{
   title : string,
   tasks : any[]
 }
 
-const page = ({title, tasks} : Props) => {
+const page = ({title, tasks} : PropsType) => {
   const {theme, isLoading, openModal, modal} = UseGlobalState()
 
   return (
