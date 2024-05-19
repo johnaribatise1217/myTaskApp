@@ -7,7 +7,7 @@ interface PropsType {
   content : React.ReactNode
 }
 
-const Modal = ({content} : PropsType) => {
+const Modal : React.FC<PropsType> = ({content}) => {
   const {closeModal, theme} = UseGlobalState()
 
   return (
