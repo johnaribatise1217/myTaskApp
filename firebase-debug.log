@@ -148,3 +148,71 @@ Type error: Page "src/app/components/modal/page.tsx" has an invalid "default" ex
 [debug] [2024-05-19T21:50:13.750Z] Error: ENOENT: no such file or directory, open '/Users/user/Desktop/mytask/.next/export-marker.json'
 [error] 
 [error] Error: An unexpected error has occurred.
+[debug] [2024-05-19T23:19:41.407Z] ----------------------------------------------------------------------
+[debug] [2024-05-19T23:19:41.412Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-05-19T23:19:41.412Z] CLI Version:   13.9.0
+[debug] [2024-05-19T23:19:41.412Z] Platform:      darwin
+[debug] [2024-05-19T23:19:41.413Z] Node Version:  v20.11.0
+[debug] [2024-05-19T23:19:41.413Z] Time:          Mon May 20 2024 00:19:41 GMT+0100 (West Africa Standard Time)
+[debug] [2024-05-19T23:19:41.413Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-05-19T23:19:41.505Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-05-19T23:19:41.506Z] > authorizing via signed-in user (aribatisejohn8@gmail.com)
+[debug] [2024-05-19T23:19:41.506Z] [iam] checking project my-task-c5a96 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-05-19T23:19:41.507Z] > refreshing access token with scopes: []
+[debug] [2024-05-19T23:19:41.509Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-05-19T23:19:41.510Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-19T23:19:45.087Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-05-19T23:19:45.088Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-05-19T23:19:45.141Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-c5a96:testIamPermissions [none]
+[debug] [2024-05-19T23:19:45.141Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-c5a96:testIamPermissions x-goog-quota-user=projects/my-task-c5a96
+[debug] [2024-05-19T23:19:45.142Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-c5a96:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-19T23:19:46.621Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-c5a96:testIamPermissions 200
+[debug] [2024-05-19T23:19:46.622Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-task-c5a96:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-05-19T23:19:46.623Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-task-c5a96 [none]
+[debug] [2024-05-19T23:19:47.244Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-task-c5a96 200
+[debug] [2024-05-19T23:19:47.244Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-task-c5a96 {"projectId":"my-task-c5a96","projectNumber":"986152917834","displayName":"my-task","name":"projects/my-task-c5a96","resources":{"hostingSite":"my-task-c5a96"},"state":"ACTIVE","etag":"1_ae91da7b-53c9-4881-9b95-5af96ccddb0f"}
+[debug] [2024-05-19T23:19:49.757Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites pageToken=&pageSize=10
+[debug] [2024-05-19T23:19:51.593Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites 200
+[debug] [2024-05-19T23:19:51.594Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites {"sites":[{"name":"projects/my-task-c5a96/sites/my-task-c5a96","defaultUrl":"https://my-task-c5a96.web.app","appId":"1:986152917834:web:5a8862fc779e6e28bb3fb3","type":"DEFAULT_SITE"}]}
+[debug] [2024-05-19T23:19:51.595Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:986152917834:web:5a8862fc779e6e28bb3fb3/config [none]
+[debug] [2024-05-19T23:19:52.602Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:986152917834:web:5a8862fc779e6e28bb3fb3/config 200
+[debug] [2024-05-19T23:19:52.602Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:986152917834:web:5a8862fc779e6e28bb3fb3/config {"projectId":"my-task-c5a96","appId":"1:986152917834:web:5a8862fc779e6e28bb3fb3","storageBucket":"my-task-c5a96.appspot.com","apiKey":"AIzaSyCMrWUkFT_2-E00bV7huZXJD-Y-or57d4k","authDomain":"my-task-c5a96.firebaseapp.com","messagingSenderId":"986152917834","measurementId":"G-8YDJTTTBDE"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-05-19T23:19:57.307Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites/my-task-c5a96 [none]
+[debug] [2024-05-19T23:19:58.056Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites/my-task-c5a96 200
+[debug] [2024-05-19T23:19:58.057Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/my-task-c5a96/sites/my-task-c5a96 {"name":"projects/my-task-c5a96/sites/my-task-c5a96","defaultUrl":"https://my-task-c5a96.web.app","appId":"1:986152917834:web:5a8862fc779e6e28bb3fb3","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.2
+
+[info]    - Environments: .env.local, .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] Failed to compile.
+
+
+[info] src/app/components/modal/page.tsx
+Type error: Page "src/app/components/modal/page.tsx" has an invalid "default" export:
+  Type "PropsType" is not valid.
+
+
+[debug] [2024-05-19T23:20:28.673Z] Error: ENOENT: no such file or directory, open '/Users/user/Desktop/mytask/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
