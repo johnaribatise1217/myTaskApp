@@ -6,7 +6,7 @@ export const DELETE = async(req: Request, {params} : {params : {id : string}}) =
   try {
     //get the userId from auth()
     const {userId} = auth()
-    const taskId = parseInt(params.id)
+    const taskId = params.id
 
     //if there's no userId , then don't authorize the task
     if(!userId){
